@@ -5,50 +5,99 @@
     list-style-type: none;
 }
 
-/* Ajustes Generales*/
-
 body {
     background-color: rgb(5, 5, 5);
     margin: 0;
     font-family: "Lora";  
 }
 
-footer {
-    background-color: rgb(16, 16, 16);
-    padding: 30px;
-    text-align: center;
+/* NAVBAR BOOTSTRAP */
+
+.nav-pers{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
-footer li {
-    display: inline;
-    padding: 10px;
+.nav-pers h1{
+    padding: 15px;
 }
 
-address {
-    color: aliceblue;
-
-}
-
-header {
-    min-height: 80px;
+.nav-pers li{
     padding: 20px;
-    background-color: rgb(16, 16, 16);
-}
-
-header li{
-    padding: 10px;
     width: 100%;
     display: inline;
 }
 
-nav{
+.nav-pers ul{
+    padding-top: 20px;
+}
+
+@media (min-width:800px){
+    .navbar-toggler{
+        display: none;
+    }
+    .container-fluid{
+        justify-content: center;
+    }
+}
+
+@media (max-width:800px){
+    .container-fluid{
+        justify-content: start;
+    }
+    .nav-pers ul{
+        display: none;
+    }
+    .navbar-nav{
+        align-items: start;
+    }
+}
+
+/* FOOTER */
+
+.fot-prb{
+    margin-top: 100vh;
+    height: 240px;
+    background-color: rgb(21, 21, 21);
+    color: #ffffff;
+}
+
+.nav-fot{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.data-fot{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.icons-fot{
+    font-size: 27px;
+    padding-left: 0px;
+}
+
+.div__icon h4{
+    font-size: 60px;
+}
+
+@media (max-width:800px){
+    .div__data{
+        display: none;
+    }
+    .div__navfot{
+        display: none;
+    }
+    
+}
+
+.cont-nav{
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
 a {
@@ -58,73 +107,6 @@ a {
 
 a:hover{
     color: rgb(220, 221, 210);
-}
-
-h1 {
-    color: rgb(220, 221, 210);
-    font-size: 36px;
-}
-
-#check-menu, label.menu{
-    display: none;
-}
-
-@media (min-width:400px) and (max-width:800px){
-    nav{
-        flex-direction: row-reverse;
-        flex-grow: 1;
-    }
-    nav ul{
-        display: none;
-        position: absolute;
-        top: 70px;
-        width: 50%;
-        height: 180px;
-        background-color: rgb(45, 45, 45);
-        flex-direction: column;
-    }
-
-    nav li{
-        display: flex;
-        justify-content: start;
-    }
-
-    label.menu{
-        display: block;
-        font-size: 1.7em;
-        color: antiquewhite;
-        cursor: pointer;
-    }
-
-    #check-menu:checked ~ ul{
-        display: block;
-    }
-}
-
-
-
-/* Pagina Clientes */
-
-.cont-lg{
-    text-align: center;
-    font-size: 30px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.tit-lg{
-    padding: 80px;
-    font-size: 100px;
-}
-
-.img-lg{
-    width: 600px;
-    display: flex;
-}
-
-.img-lg img{
-    width: 600px;
 }
 
 /* Pagina de Inicio */
@@ -171,8 +153,32 @@ h1 {
     background-color: rgb(220, 221, 210);
 }
 
+/* Pagina Clientes */
+
+.cont-lg{
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.tit-lg{
+    padding: 80px;
+    font-size: 100px;
+}
+
+.img-lg{
+    width: 600px;
+    display: flex;
+}
+
+.img-lg img{
+    width: 600px;
+}
+
 /* MEDIA */
-/*
+
 @media (min-width:400px) and (max-width:800px){
     .main-text a{
         display: inline-block;
@@ -181,102 +187,6 @@ h1 {
         font-size: 20px;
         width: 500px;
     }
-}
-
-/* Pagina WORKS 
-
-.benelli-img {
-    background: linear-gradient(to right, rgb(0 0 0/ .5), rgb(0 0 0/ .5)), url(../imagenes/benelliwork.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: benelli;
-}
-
-.benelli-text{
-    color: #ffffff;
-    text-align: center;
-    padding: 320px;
-}
-
-.real-img {
-    background: linear-gradient(to right, rgb(0 0 0/ .5), rgb(0 0 0/ .5)), url(../imagenes/houses.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: real;
-
-}
-
-.real-text{
-    color: #ffffff;
-    text-align: center;
-    padding: 320px;
-}
-
-.corona-img {
-    background: linear-gradient(to right, rgb(0 0 0/ .5), rgb(0 0 0/ .5)), url(../imagenes/fondocorona.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: corona;
-}
-
-.corona-text{
-    color: #ffffff;
-    text-align: center;
-    padding: 320px;
-}
-
-.redb-img {
-    background: linear-gradient(to right, rgb(0 0 0/ .5), rgb(0 0 0/ .5)), url(../imagenes/redbull.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 3px;
-    grid-area: redb;
-}
-
-.redb-text{
-    color: #ffffff;
-    text-align: center;
-    padding: 320px;
-
-}
-
-*/
-
-/* GRIDS 
-
-.contenedor-img{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
-    grid-template-areas: "benelli real"
-                         "corona redb";
-}*/
-
-/* MEDIA 
-
-@media (min-width:400px) and (max-width:800px){
-    .contenedor-img{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr;
-        grid-template-areas: "benelli"
-                              "real"
-                             "corona"
-                             "redb";
-    }*/
-/*    nav{
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 20px;
-        flex-direction: column;
-        padding: 10px 0px;
-    }
-    header ul{
-        padding: 20px 0px;
-    }  
 }
 
 /* Pagina CONTACTO */
@@ -362,11 +272,7 @@ h1 {
     margin: 30px;
 }
 
-/* PRUEBAS CON BOOTSTRAP */
-
-
-
-
+/* WORKS BOOTSTRAP */
 
 section .row{
     height: 455px;
@@ -405,31 +311,4 @@ section .row{
     background-image: url(../imagenes/redbull.jpg);
 }
 
-.nav-pers{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
-.navbar{
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav-pers li{
-    padding: 10px;
-    width: 100%;
-    display: inline;
-}
-
-.container-fluid{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-@media (min-width:800px){
-    .navbar-toggler{
-        display: none;
-    }
-}

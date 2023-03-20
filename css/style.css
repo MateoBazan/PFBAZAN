@@ -279,6 +279,10 @@ a:hover{
     height: 300px;
 }
 
+.element__nos{
+    height: auto;
+}
+
 .text-nos{
     text-align: start;
     margin: 30px;

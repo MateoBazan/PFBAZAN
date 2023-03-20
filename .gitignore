@@ -79,7 +79,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 /bootstrap-5.2.3-dist
-/pagina-1
+pruebas.html
 
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,visualstudiocode

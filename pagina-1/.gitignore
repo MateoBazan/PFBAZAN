@@ -78,7 +78,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-/imagenes
 /bootstrap-5.2.3-dist
 pruebas.html
 

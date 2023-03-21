@@ -38,7 +38,7 @@ body {
     padding-top: 20px;
 }
 
-@media (min-width:800px){
+@media (min-width:801px){
     .navbar-toggler{
         display: none;
     }
@@ -140,12 +140,10 @@ a:hover{
 
 .main-text p{
     font-size: 25px;
-    padding-top: 15px;
 }
 
 .main-text h3{
     font-size: 45px;
-    padding-top: 15px;
 }
 
 .main-text h2{
@@ -164,6 +162,16 @@ a:hover{
 
 .main-text a:hover{
     background-color: rgb(220, 221, 210);
+}
+
+@media (min-width:200px) and (max-width:800px){
+    .main-text a{
+        display: inline-block;
+    }
+    .main-text p{
+        font-size: 20px;
+        margin: 2px;
+    }
 }
 
 /* Pagina Clientes */
@@ -188,18 +196,6 @@ a:hover{
 
 .img-lg img{
     width: 600px;
-}
-
-/* MEDIA */
-
-@media (min-width:400px) and (max-width:800px){
-    .main-text a{
-        display: inline-block;
-    }
-    .main-text p{
-        font-size: 20px;
-        width: 500px;
-    }
 }
 
 /* Pagina CONTACTO */
@@ -278,12 +274,6 @@ a:hover{
 }
 
 /* Pagina NOSOTROS */
-
-/*
-.cont__nos{
-    display: flex;
-    justify-content: center;
-}*/
 
 .info-nos{
     padding: 70px;

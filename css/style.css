@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+.row{
+    margin-right: 0px;
+}
+
 /* NAVBAR BOOTSTRAP */
 
 .nav-pers{
@@ -93,6 +97,13 @@ body {
     .div__navfot{
         display: none;
     }
+    .icons-fot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
     
 }
 
@@ -114,7 +125,7 @@ a:hover{
 /* Pagina de Inicio */
 
 .main-princ {
-    height: 800px;
+    height: 60em;
     background-image: url(../imagenes/redbull.jpg);
     background-color: rgb(51, 51, 51);
     background-blend-mode: soft-light;
@@ -257,7 +268,7 @@ a:hover{
 
 }
 
-@media (min-width:400px) and (max-width:800px){
+@media (min-width:100px) and (max-width:800px){
     .contact-img{
         display: none;
     }
@@ -268,15 +279,25 @@ a:hover{
 
 /* Pagina NOSOTROS */
 
-.info-nos{
+/*
+.cont__nos{
     display: flex;
-    align-items: center;
+    justify-content: center;
+}*/
+
+.info-nos{
     padding: 70px;
+    display: flex;
 }
 
 .img-nos img{
     width: 250px;
     height: 300px;
+}
+
+.text-nos{
+    text-align: start;
+    margin: 30px;
 }
 
 .element-nos{
@@ -289,11 +310,6 @@ a:hover{
     padding-bottom: 40px;
 }
 
-.text-nos{
-    text-align: start;
-    margin: 30px;
-}
-
 .img__element{
     width: 200px;
     height: 200px;
@@ -302,6 +318,14 @@ a:hover{
 .cont__elementos{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width:800px){
+    .info-nos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* WORKS BOOTSTRAP */
@@ -320,7 +344,6 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .benelli-img{

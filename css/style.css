@@ -279,8 +279,14 @@ a:hover{
     height: 300px;
 }
 
-.element__nos{
-    height: auto;
+.element-nos{
+    text-align: center;
+    margin: 10px;
+}
+
+.element-nos h3{
+    font-size: 45px;
+    padding-bottom: 40px;
 }
 
 .text-nos{
@@ -300,7 +306,7 @@ a:hover{
 
 /* WORKS BOOTSTRAP */
 
-section .row{
+.cont__works{
     height: 455px;
 }
 

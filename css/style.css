@@ -1,4 +1,5 @@
 /* VARIABLES */
+/* VARIABLES */
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +84,7 @@ a:hover {
 /* Pagina de Inicio */
 .main-princ {
   height: 60em;
-  background-image: url(../imagenes/redbull.jpg);
+  /*    background-image: $fondoprinc; */
   background-color: rgb(51, 51, 51);
   background-blend-mode: soft-light;
   background-size: cover;
@@ -113,7 +114,7 @@ a:hover {
   font-size: 35px;
   padding: 3px;
 }
-.main-text .main-text a:hover {
+.main-text a:hover {
   background-color: rgb(220, 221, 210);
 }
 
@@ -330,6 +331,9 @@ a:hover {
     flex-direction: column;
     align-items: center;
   }
+}
+.main-princ {
+  background-image: url(/imagenes/redbull.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */

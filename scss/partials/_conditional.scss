@@ -1,0 +1,37 @@
+$fondoprinc: "redbull";
+
+@if($fondoprinc == "corona"){
+    .main-princ{
+        background-image: url(/imagenes/fondocorona.jpg);
+    }
+    .nav__pers{
+        background-color: aliceblue;
+        h1{
+            color: rgb(186, 130, 26);
+        }
+        a{
+            color: rgb(186, 130, 26);
+        }
+    }
+    .fot__pers{
+        li{
+            color: rgb(186, 130, 26);
+        }
+        h4{
+            color: rgb(186, 130, 26);
+        }
+        a{
+            color: rgb(186, 130, 26);
+        }
+    }
+}
+@else if ($fondoprinc == "redbull"){
+    .main-princ{
+        background-image: url(/imagenes/redbull.jpg);
+    }
+}
+@else if ($fondoprinc == "realstate"){
+    .main-princ{
+        background-image: url(/imagenes/houses.jpg);
+    }
+}

@@ -1,0 +1,74 @@
+/* NAVBAR BOOTSTRAP */
+
+@media (min-width:801px){
+    .navbar-toggler{
+        display: none;
+    }
+    .container-fluid{
+        justify-content: center;
+    }
+}
+
+@media (max-width:800px){
+    .container-fluid{
+        justify-content: start;
+    }
+    .nav-pers ul{
+        display: none;
+    }
+    .navbar-nav{
+        align-items: start;
+    }
+}
+
+/* FOOTER */
+
+@media (max-width:800px){
+    .div__data{
+        display: none;
+    }
+    .div__navfot{
+        display: none;
+    }
+    .icons-fot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    
+}
+
+/* Pagina de Inicio */
+
+@media (min-width:200px) and (max-width:800px){
+    .main-text a{
+        display: inline-block;
+    }
+    .main-text p{
+        font-size: 20px;
+        margin: 2px;
+    }
+}
+
+/* Pagina CONTACTO */
+
+@media (min-width:100px) and (max-width:800px){
+    .contact-img{
+        display: none;
+    }
+    .conetent-contacto{
+        justify-content: center;
+    }
+}
+
+/* Pagina NOSOTROS */
+
+@media (max-width:800px){
+    .info-nos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

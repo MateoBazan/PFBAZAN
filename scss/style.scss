@@ -1,0 +1,289 @@
+/* VARIABLES */
+$backimgrd: url(../imagenes/redbull.jpg);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Lora";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.row{
+    margin-right: 0px;
+}
+
+/* NAVBAR BOOTSTRAP */
+
+.nav-pers{
+    display: flex;
+    gap: 20px;
+    h1{
+        padding: 15px;
+    }
+    li{
+        padding: 20px;
+        width: 100%;
+        display: inline;
+    }
+    ul{
+        padding-top: 20px;
+    }
+}
+
+
+/* FOOTER */
+
+.fot-prb{
+    margin-top: auto;
+    height: 240px;
+    background-color: rgb(21, 21, 21);
+    color: #ffffff;
+}
+
+.nav-fot{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.data-fot{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.icons-fot{
+    font-size: 27px;
+    padding-left: 0px;
+}
+
+.div__icon h4{
+    font-size: 60px;
+}
+
+
+.cont-nav{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(220, 221, 210);
+}
+
+/* Pagina de Inicio */
+
+.main-princ {
+    height: 60em;
+    background-image: $backimgrd;
+    background-color: rgb(51, 51, 51);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.main-text{
+    p{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 55px;
+    }
+    a{
+        background-color: #ffffff;
+        color: black;
+        border: solid black;
+        margin: 30px;
+        display: inline-block;
+        font-size: 35px;
+        padding: 3px;
+    }
+    .main-text a:hover{
+        background-color: rgb(220, 221, 210);
+    }
+}
+
+
+/* Pagina Clientes */
+
+.cont-lg{
+    text-align: center;
+    font-size: 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.tit-lg{
+    padding: 80px;
+    font-size: 100px;
+}
+
+.img-lg{
+    width: 600px;
+    display: flex;
+    img{
+        width: 600px;
+    }
+}
+
+/* Pagina CONTACTO */
+
+.conetent-contacto{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact-img{
+    height: 700px;
+    width: 400px;
+    img{
+        width: 400px;
+        height: 700px;
+        object-fit: cover;
+    }
+}
+
+.formulario {
+    width: 400px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
+    h2{
+        color: rgb(220, 221, 210);
+        width: 100%;
+        margin: 5px 0px 5px 0px;
+    }
+    label{
+        color: rgb(220, 221, 210);
+        display: block;
+        width: 100%;
+        text-align: start;
+    }
+    input{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: rgb(25, 25, 25);
+        border-top: #ffffff;
+        border-left: #ffffff;
+        border-right: #ffffff;
+    }
+    .form-boton{
+        background-color:rgb(220, 221, 210);
+        padding: 10px;
+        color: black;
+    }
+}
+
+.fomr-msj{
+    height: 90px;
+}
+
+
+/* Pagina NOSOTROS */
+
+.info-nos{
+    padding: 70px;
+    display: flex;
+    img{
+        width: 250px;
+        height: 300px;
+    }
+}
+
+.text-nos{
+    text-align: start;
+    margin: 30px;
+}
+
+.element-nos{
+    text-align: center;
+    margin: 10px;
+    h3{
+        font-size: 45px;
+        padding-bottom: 40px;
+    }
+}
+
+.img__element{
+    width: 200px;
+    height: 200px;
+}
+
+.cont__elementos{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* WORKS BOOTSTRAP */
+
+.cont__works{
+    height: 455px;
+}
+
+.div__imgwork{
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(51, 51, 51);
+    background-blend-mode: soft-light;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div__imgwork:hover{
+    opacity: 0,5;
+}
+
+.benelli-img{
+    background-image: url(../imagenes/benelliwork.jpg);
+}
+
+.corona-img{
+    background-image: url(../imagenes/fondocorona.jpg);
+}
+
+.real-img{
+    background-image: url(../imagenes/houses.jpg);
+}
+
+.redb-img{
+    background-image: url(../imagenes/redbull.jpg);
+}
+
+/*                     IMPORTS                         */
+
+@import "queries"

@@ -40,6 +40,10 @@ body {
     ul{
         padding-top: 20px;
     }
+    li:hover{
+        background: rgb(33,37,32);
+background: linear-gradient(180deg, rgba(33,37,32,1) 58%, rgba(220,221,210,1) 98%);
+    }
 }
 
 
@@ -219,6 +223,8 @@ a:hover{
 .info-nos{
     padding: 70px;
     display: flex;
+    justify-content: center;
+    margin: 0px 200px;
     img{
         width: 250px;
         height: 300px;
@@ -233,9 +239,13 @@ a:hover{
 .element-nos{
     text-align: center;
     margin: 10px;
+    margin-bottom: 20px;
     h3{
         font-size: 45px;
         padding-bottom: 40px;
+    }
+    .cont__elementos{
+        margin-bottom: 30px;
     }
 }
 
@@ -247,6 +257,7 @@ a:hover{
 .cont__elementos{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 

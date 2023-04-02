@@ -1,6 +1,11 @@
 $fondoprinc: "redbull";
 
-@if($fondoprinc == "corona"){
+@if ($fondoprinc == "redbull"){
+    .main-princ{
+        background-image: url(/imagenes/redbull.jpg);
+    }
+}
+@else if($fondoprinc == "corona"){
     .main-princ{
         background-image: url(/imagenes/fondocorona.jpg);
     }
@@ -23,11 +28,6 @@ $fondoprinc: "redbull";
         a{
             color: rgb(186, 130, 26);
         }
-    }
-}
-@else if ($fondoprinc == "redbull"){
-    .main-princ{
-        background-image: url(/imagenes/redbull.jpg);
     }
 }
 @else if ($fondoprinc == "realstate"){

@@ -2,12 +2,12 @@ $fondoprinc: "redbull";
 
 @if ($fondoprinc == "redbull"){
     .main-princ{
-        background-image: url(../../imagenes/redbull.jpg);
+        background-image: url(../imagenes/redbull.jpg);
     }
 }
 @else if($fondoprinc == "corona"){
     .main-princ{
-        background-image: url(../../imagenes/fondocorona.jpg);
+        background-image: url(../imagenes/fondocorona.jpg);
     }
     .nav__pers{
         background-color: aliceblue;
@@ -32,6 +32,6 @@ $fondoprinc: "redbull";
 }
 @else if ($fondoprinc == "realstate"){
     .main-princ{
-        background-image: url(../../imagenes/houses.jpg);
+        background-image: url(../imagenes/houses.jpg);
     }
 }

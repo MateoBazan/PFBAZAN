@@ -372,6 +372,14 @@ a:hover {
     align-items: center;
   }
 }
+/* Pagina NOSOTROS */
+@media (max-width: 800px) {
+  .cont-lg h2 {
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 40px;
+  }
+}
 .main-princ {
   background-image: url(../imagenes/redbull.jpg);
 }

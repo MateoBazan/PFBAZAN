@@ -71,6 +71,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
+  margin-top: 30px;
+  gap: 7px;
 }
 
 .data-fot {
@@ -276,10 +278,6 @@ a:hover {
   flex-direction: column;
 }
 
-.div__imgwork:hover {
-  opacity: 0, 5;
-}
-
 .benelli-img {
   background-image: url(../imagenes/benelliwork.jpg);
 }
@@ -326,7 +324,7 @@ a:hover {
   }
 }
 /* FOOTER */
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .div__data {
     display: none;
   }
